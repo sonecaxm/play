@@ -97,11 +97,13 @@ function PauseDecider() {
 
 function initializesong() {
     // Carrega a imagem e as informações da música atual
-    cover.src = `/img/${shuffledPlaylist[currentSong].file}.png`;
-    song.src = `/audio/${shuffledPlaylist[currentSong].file}.mp3`;
+    cover.src = `img/${shuffledPlaylist[currentSong].file}.png`;
+    song.src = `audio/${shuffledPlaylist[currentSong].file}.mp3`;
     songName.innerText = shuffledPlaylist[currentSong].name;
     bandname.innerText = shuffledPlaylist[currentSong].artist;
+   
     likeButtonRender();
+    
 }
 
 function nextSong() {
