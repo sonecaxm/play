@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto-Playlist do jonatas</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+     <link rel="icon" href="img/felipao.jpeg">
+</head>
+<body>
+ <div class="music-container">
+    <h4 class="playlist-title" >Playlist do Jonatas</h4>
+    <img id='cover'  alt="capa-musica"></img>
+     <audio id='pardal' ></audio>
+    <div id="bellow-cover">
+        <div id="song-info">
+            <div id="music-name">Nome da música</div>
+            <div id="band-name">Nome da banda</div>
+        </div>    
+        <button id='like' class="button"><i class="bi bi-heart"></i></button>
+    </div>
+
+     <div id="progress-container">
+    <div id="progress-bar">
+        <div id="current-progress"></div>
+    </div>
+    <div id="time-box">
+        <div id="current-song">00:00:00</div>
+        <div id="total-song">00:00:00</div>
+    </div>
+     </div>
+    <div id="button-container">
+        <button id="shuffle" class="button"><i class="bi bi-shuffle"></i></button>
+        <button id="previous" class="button button-navigate"><i class="bi bi-skip-start-fill"></i></button>
+        <button id="play" class="button button-biggest"><i class="bi bi-play-circle-fill"></i></button>
+        <button id="next" class="button button-navigate"><i class="bi bi-skip-end-fill"></i></button>
+        <button id="repeat" class="button"><i class="bi bi-repeat"></i></button>
+    </div>
+ </div>
+ <script src="js/index.js"></script>
+</body>
+</html>

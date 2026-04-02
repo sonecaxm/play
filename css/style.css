@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: linear-gradient(
+            rgb(59,88,93)
+    );
+    height: 100vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+.music-container{
+    width: 100%;
+    max-width: 520px;
+    padding: 0 16px 24px;
+}
+button{
+    background-color:inherit;
+    border: none;
+    color: inherit;
+}
+#bellow-cover{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3em 0 1em 0 ;
+}
+#button-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.button{
+    font-size: 2em;
+    cursor: pointer;
+}
+.button-navigate{
+    font-size: 3em;
+}
+.button-biggest{
+    font-size: 4em;
+}
+#cover{
+width: 450px;
+}
+
+.playlist-title{
+    display: flex;
+    justify-content: center;
+    margin: 1em 0 4em 0;
+    font-size: 15px;
+}
+#music-name{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#band-name{
+    color: #8B999C;
+}
+#progress-bar{
+    background-color: #8B999C;
+    height: 3px;
+    width: 100%;
+    border-radius: 10px;
+    cursor : pointer;
+}
+#current-progress{
+    --progress: 0%;
+    height: inherit;
+    width: var(--progress);
+    background-color:white;
+    border-radius: inherit;
+
+}
+#progress-container{
+   cursor: pointer;
+}
+
+/*responsividade*/
+@media (max-width: 600px){
+    body{
+        height: auto;
+        min-height: 100vh;
+    }
+    .playlist-title{
+        margin: 1em 0 2em 0;
+        font-size: 14px;
+    }
+    #cover{
+        width: 100%;
+        max-width: 320px;
+    }
+    #bellow-cover{
+        margin: 2em 0 1em 0;
+        gap: 12px;
+    }
+    #song-info{
+        max-width: 70%;
+    }
+    #music-name{
+        font-size: 1.2em;
+    }
+    #button-container{
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+    .button{
+        font-size: 1.6em;
+    }
+    .button-navigate{
+        font-size: 2.2em;
+    }
+    .button-biggest{
+        font-size: 3em;
+    }
+}
+
+@media (max-width: 360px){
+    #cover{
+        max-width: 260px;
+    }
+    #song-info{
+        max-width: 65%;
+    }
+    .button{
+        font-size: 1.4em;
+    }
+    .button-navigate{
+        font-size: 2em;
+    }
+    .button-biggest{
+        font-size: 2.6em;
+    }
+}
+
+.button-active{
+    color: rgb(0, 183, 107);
+}
+
+#time-box{
+    display: flex;
+    justify-content: space-between;
+    font-size: smaller;
+    margin-top: 0.5em;
+}
+
