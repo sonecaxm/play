@@ -53,22 +53,22 @@ const pedro = {
     liked: false
 }
 
-const grato = {
-    name: 'Grato',
-    artist: 'Get Worship',
-    file: 'grato',
+const goodbye = {
+    name: 'goodbye',
+    artist: 'Loya',
+    file: 'goodbye',
     liked: false
 }
 
 const tropa = {
-    name: 'tropa do Felpão',
+    name: 'tropa do Felipão',
     artist: 'Mc Urubu',
     file: 'felipao',
     liked: false
 }
 
 
-const playlist = [kingofkings, whoyou, celebration, pedro, grato, tropa];
+const playlist = [kingofkings, whoyou, celebration, pedro, goodbye, tropa];
 let shuffledPlaylist = [...playlist]; // Cria uma cópia da playlist original para embaralhar
 
 // --- FUNÇÕES ---
