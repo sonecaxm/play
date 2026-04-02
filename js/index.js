@@ -64,6 +64,7 @@ const tropa = {
     name: 'tropa do Felpão',
     artist: 'Mc Urubu',
     file: 'felipao',
+    liked: false
 }
 
 
