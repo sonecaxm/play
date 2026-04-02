@@ -60,8 +60,14 @@ const grato = {
     liked: false
 }
 
+const tropa = {
+    name: 'tropa do Felpão',
+    artist: 'Mc Urubu',
+    file: 'felipao',
+}
 
-const playlist = [kingofkings, whoyou, celebration, pedro, grato];
+
+const playlist = [kingofkings, whoyou, celebration, pedro, grato, tropa];
 let shuffledPlaylist = [...playlist]; // Cria uma cópia da playlist original para embaralhar
 
 // --- FUNÇÕES ---
