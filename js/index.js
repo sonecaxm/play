@@ -69,13 +69,8 @@ let shuffledPlaylist = [...playlist]; // Cria uma cópia da playlist original pa
 function playSong() {
     play.querySelector('.bi').classList.remove('bi-play-circle-fill');
     play.querySelector('.bi').classList.add('bi-pause-circle-fill');
-    const promise = song.play();
-    if (promise !== undefined){
-        promise.catch(error =>{
-            pauseSong();
-        });
-    }
     
+    }
     song.play();
     isPlaying = true;
 }
@@ -101,7 +96,7 @@ function initializesong() {
     song.src = `/audio/${shuffledPlaylist[currentSong].file}.mp3`;
     songName.innerText = shuffledPlaylist[currentSong].name;
     bandname.innerText = shuffledPlaylist[currentSong].artist;
-    song.load();
+   
     likeButtonRender();
     
 }
