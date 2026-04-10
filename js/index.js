@@ -61,9 +61,9 @@ const goodbye = {
 }
 
 const tropa = {
-    name: 'tropa do Felipão',
-    artist: 'Mc Urubu',
-    file: 'felipao',
+    name: 'Tropa da Gordona',
+    artist: 'Mc Ana Julia',
+    file: 'JULIA',
     liked: false
 }
 
